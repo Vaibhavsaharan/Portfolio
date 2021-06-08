@@ -16,7 +16,7 @@ function Greeting() {
     <Fade top duration={1000} distance="40px">
         <Box >       
             <section className="section section-lg section-shaped pb-250" style={{height: '100vh'}}>
-                <div className="shape shape-style-1 bg-gradient-info">
+                <div style={{backgroundColor:"rgb(171 192 251)"}} className="shape shape-style-1">
                     <span />
                     <span />
                     <span />

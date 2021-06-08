@@ -136,12 +136,21 @@ export const experience = [
 
 export const projects = [
   {
+    id : '1',
     name: "Dashboard",
     techUsed : [
-      'mongodb',
-      'express',
-      'react',
-      'node'
+      {
+        skillName: 'mongodb',
+        fontAwesomeClassname: 'vscode-icons:file-type-mongo',
+      },
+      {
+        skillName: 'reactjs',
+        fontAwesomeClassname: 'logos:docker-icon',
+      },
+      {
+        skillName: 'node',
+        fontAwesomeClassname: 'vscode-icons:file-type-reactjs',
+      }
     ],
     desc: "A Dashboard application to monitor different matrices such as revenue, api failure counts, payment failures. It is a MERN stack application using mongodb cloud and hosted on heroku",
     shortDesc : "MERN Stack dashboard",
@@ -152,11 +161,21 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '2',
     name: "TorrPix-Web",
     techUsed : [
-      'webtorrent',
-      'javascript',
-      'node',
+      {
+        skillName: 'html-5',
+        fontAwesomeClassname: 'vscode-icons:file-type-html',
+      },
+      {
+        skillName: 'css3',
+        fontAwesomeClassname: 'vscode-icons:file-type-css',
+      },
+      {
+        skillName: 'JavaScript',
+        fontAwesomeClassname: 'logos:javascript',
+      },
     ],
     desc: "A movie streaming website designed to stream movies/tv series/music without using any OTT services, it provides movie description and trailer from IMDB and Youtube APIs. It uses WebRTC to only connect with other web clients and hence it could not connect to native BitTorrent clients.",
     shortDesc : "Movie streaming web app",
@@ -167,12 +186,14 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '3',
     name: "TorrPix-Desktop",
     desc: "It is the desktop version of TorrPix and offeres searching from the popular torrent providers. It provides good speed when compared to TorrPix-Web. Chromecast feature is in development",
     techUsed : [
-      'webtorrent',
-      'python',
-      'REST APIs',
+      {
+        skillName: 'python',
+        fontAwesomeClassname: 'logos:python',
+      },
     ],
     shortDesc : "Movie Streaming Ubuntu/win Application",
     link: {
@@ -182,11 +203,14 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '4',
     name: "vTorrent",
     desc: "A distributed file sharing system developed using python for IIT Mandi, It consists of torrent clients(vTorrent), centralized torrent metafile server and a tracker service(OpenTracker). For security purposes it only connects with the clients connected to local network of IIT mandi.",
     techUsed : [
-      'python',
-      'BitTorrent Protocol',
+      {
+        skillName: 'python',
+        fontAwesomeClassname: 'logos:python',
+      },
     ],
     shortDesc : "Distributed File Sharing System",
     link: {
@@ -196,13 +220,18 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '5',
     name: "Nearby centers API",
-    desc: "It is the desktop version of TorrPix and offeres searching from the popular torrent providers. It provides good speed when compared to TorrPix-Web. Chromecast feature is in development",
+    desc: "An express js API service that uses GeoHashs to provide nodes in ascending order of distance. GeoHashs greatly imporves the search complexity with large database of cordinates",
     techUsed : [
-      'Express',
-      'Firebase',
-      'GeoHashes',
-      'RESTful API'
+      {
+        skillName: 'firebase',
+        fontAwesomeClassname: 'logos:firebase',
+      },
+      {
+        skillName: 'node',
+        fontAwesomeClassname: 'vscode-icons:file-type-reactjs',
+      }
     ],
     shortDesc : "Express API",
     link: {
@@ -212,12 +241,18 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '6',
     name: "Blog Website API",
-    desc: "It is the desktop version of TorrPix and offeres searching from the popular torrent providers. It provides good speed when compared to TorrPix-Web. Chromecast feature is in development",
+    desc: "API interface to develop blogging website, it supports basic CRUD functionality of Posts and layout of blog.",
     techUsed : [
-      'Django',
-      'python',
-      'RESTful APIs',
+      {
+        skillName: 'python',
+        fontAwesomeClassname: 'logos:python',
+      },
+      {
+        skillName: 'sql-database',
+        fontAwesomeClassname: 'vscode-icons:file-type-sql',
+      },
     ],
     shortDesc : "Django API",
     link: {
@@ -227,11 +262,18 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '7',
     name: "Recipe Management System",
-    desc: "It is the desktop version of TorrPix and offeres searching from the popular torrent providers. It provides good speed when compared to TorrPix-Web. Chromecast feature is in development",
+    desc: "A react SPA dashboard to display recipies from a restaurent API, used lazy loading to render lists",
     techUsed : [
-      'React',
-      'REST APIs',
+      {
+        skillName: 'reactjs',
+        fontAwesomeClassname: 'logos:gitlab',
+      },
+      {
+        skillName: 'Gitlab',
+        fontAwesomeClassname: 'logos:docker-icon',
+      },
     ],
     shortDesc : "React dashboard",
     link: {
@@ -241,14 +283,18 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '8',
     name: "RTO Management System",
-    desc: "It is the desktop version of TorrPix and offeres searching from the popular torrent providers. It provides good speed when compared to TorrPix-Web. Chromecast feature is in development",
+    desc: "Developed a Windows App for the database management of Regional Transport Offices (RTO’s).Visual Studio was used to design the front-end of the app and MSSQL server was used for back-end.",
     techUsed : [
-      'WinSDK',
-      'C#',
-      'xml',
-      'MS-SQL',
-      'Visual Studio'
+      // {
+      //   skillName: 'windows app',
+      //   fontAwesomeClassname: 'fab:fa-windows',
+      // },
+      {
+        skillName: 'sql-database',
+        fontAwesomeClassname: 'vscode-icons:file-type-sql',
+      },
     ],
     shortDesc : "Database Management System for Windows",
     link: {
@@ -258,11 +304,14 @@ export const projects = [
     displayPhoto : "",
   },
   {
+    id : '9',
     name: "Unified UI for CFD Softwares",
-    desc: "It is the desktop version of TorrPix and offeres searching from the popular torrent providers. It provides good speed when compared to TorrPix-Web. Chromecast feature is in development",
+    desc: "Deployed an Ubuntu based software that provides a common interface for different Computational Fluid Dynamics simulation softwares. Tkinter toolkit was used for GUI (Graphical User Interface) and Python was used as scripting language.",
     techUsed : [
-      'python scripts',
-      'tkinter',
+      {
+        skillName: 'python',
+        fontAwesomeClassname: 'logos:python',
+      },
     ],
     shortDesc : "Large Application Project",
     link: {

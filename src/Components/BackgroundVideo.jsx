@@ -1,6 +1,6 @@
 import React from 'react'
 import videourl from '../assets/videos/1.mp4'
-import {Zoom, Fade} from 'react-reveal';
+import {Zoom} from 'react-reveal';
 
 class BackgroundVideo extends React.Component {
     constructor(){
@@ -20,12 +20,9 @@ class BackgroundVideo extends React.Component {
         window.open(url, '_blank');
     }
     render(){
-        var opacityStyle;
         var bgStyle;
         if (this.state.isHovered) {
             bgStyle = {filter: 'brightness(40%) blur(5px) ', transition : 'filter 1s ease-out'}
-        } else {
-            opacityStyle = {opacity: '1'}
         }
         
         
