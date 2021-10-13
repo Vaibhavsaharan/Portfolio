@@ -27,7 +27,7 @@ function Greeting() {
                     <span />
                     <span />
                     </div>
-                    <Container className="py-lg-md d-flex">
+                    <Container maxWidth="md">
                     <div className="col px-0">
                         <div className = "greetingfirstdiv">
                             <div className="greetingmain1">

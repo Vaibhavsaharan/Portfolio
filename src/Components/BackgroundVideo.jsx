@@ -27,16 +27,15 @@ class BackgroundVideo extends React.Component {
         
         
         return (
-            
             <div style = {{padding : '0px'}} id="player" className="bgvideo">
                 <video style={bgStyle}  muted autoPlay="autoplay" loop="loop" className="bgvideoplayer">
                     <source src={videourl} type="video/mp4"/>
                 </video>
                 <Zoom>
-                    <div className="bgvideocontent">
+                    <div className="bgvideocontent" >
                         <div className="bgvideosubcontent">
-                            <h1 style={{color : '#fff'}}>Watch Movies</h1>
-                            <p style={{color : '#fff'}}>Directly stream movies using WebRTC</p>
+                            <h1 style={{color : '#fff' ,fontSize : '4vw'}}>Watch Movies</h1>
+                            <p style={{color : '#fff',fontSize : '2vw'}}>Directly stream movies using WebRTC</p>
                             <button onClick = {this.watchMovieClicked} onMouseEnter={this.handleHover} onMouseLeave = {this.handleHover} id ="bgmnewsite" type="button" className="btn btn-secondary" >Search Movie</button>
                         </div>
                     </div>

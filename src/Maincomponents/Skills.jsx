@@ -11,7 +11,7 @@ class Skills extends React.Component {
     render(){
     return (
         <Fade left distance="40px">
-                <Container className="text-center my-5 section section-lg fixed-bg">
+                <Container className="text-center my-1 section fixed-bg" maxWidth='md'>
                 <h1 className="h1">{skillsSection.title}</h1>
                 <p className="lead">{skillsSection.subTitle}</p>
                 <div className = "skillsfirstdiv">

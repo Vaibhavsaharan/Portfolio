@@ -23,6 +23,7 @@ function Projects () {
     function hideInfo(){
         setIsHovered(false);
     }
+
     var skillsList = []
     if(project && project.techUsed === undefined){
         skillsList = []
@@ -45,7 +46,7 @@ function Projects () {
     }
     return (
         <div className = "projects-page">
-            <div className="projects-wrapper"> 
+            <div className="projects-wrapper "> 
                 <div className= "names-wrapper">
                     {projects.map((project) =>{
                         return <Fragment key={project.name}>
@@ -58,10 +59,10 @@ function Projects () {
                 <div style={{display: 'table-cell', backgroundColor : '#2d545e'}}>
                     <div style={{opacity : isHovered ? '1' : '0',
                                 color : 'white',
-                                top : '25%',
+                                top : '15vh',
                                 width : '50%',
                                 margin : '0 auto',
-                                height : '500px',
+                                height : '70vh',
                                 position : 'sticky',
                                 zIndex : '1',
                                 borderRadius: '86px',
