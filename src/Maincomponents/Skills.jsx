@@ -18,8 +18,8 @@ class Skills extends React.Component {
                     <div lg="6">
                         <DisplayLottie animationData={webdev} />
                     </div>
-                    <div className="skillsiconsdiv">
-                        <div className="d-flex justify-content-center flex-wrap mb-5">
+                    <div className="skillsiconsdiv d-flex align-items-center">
+                        <div className="d-flex justify-content-center flex-wrap">
                             {
                                 skillsSection.softwareSkills.map((skill) => {
                                     return <Fragment key={skill.skillName}>
@@ -37,13 +37,7 @@ class Skills extends React.Component {
                                 })
                             }
                         </div>
-                        <div>
-                            {
-                                skillsSection.skills.map(skill => {
-                                    return <p key={skill}>{skill}</p>
-                                })
-                            }
-                        </div>
+                    
                     </div>
                 </div>
                 </Container>
